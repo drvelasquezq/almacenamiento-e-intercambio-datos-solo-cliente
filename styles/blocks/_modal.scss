@@ -1,0 +1,38 @@
+.cookie_modal {
+  display: none;
+  position: sticky;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 25rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--white);
+  color: var(--purple-3);
+  text-align: center;
+
+  &__image {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  &__actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  &.active {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+button {
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 0.2rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+
+  &[data-type="filled"] {
+    background-color: var(--green-0);
+    font-weight: bold;
+
+    &:active {
+      background-color: var(--green-1);
+      color: var(--black);
+    }
+  }
+
+  &[data-type="text"] {
+    background-color: transparent;
+    border: 2px dashed var(--green-1);
+  }
+}

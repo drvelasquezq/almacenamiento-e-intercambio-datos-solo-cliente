@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Modulo 3 | Clase  14 | Guardando nuestros datos en indexDB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/index.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="wrapper">
+            <div class="site-header__inner">
+                <a href="/" aria-label="Studio Ghibli Database" class="site-header__brand">
+                    Anime Repository
+                </a>
+                <nav class="nav" aria-label="primary">
+                    <ul class="nav__list">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="saved.html">saved</a></li>
+                        <li>
+                            <label class="switch">  
+                                <input class="switch__input" type="checkbox" id="data-theme-toggle">  
+                                <span class="switch__slider"></span>  
+                            </label>
+                        </li>
+                     </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main role="main" class="wrapper">
+        <div class="anime-grid content" id="anime-grid">
+            <div class="anime-item" id="anime-item-0">
+                <img class="anime-item__image" src="https://cdn.myanimelist.net/images/anime/1223/96541l.webp" alt="anime-title">
+                <div class="anime-item__content" id="anime-item-">
+                    <a class="anime-item__content__title" id="anime-item-title">Fullmetal Alchemist: Brotherhood</a>
+                    <p id="anime-item-desc">After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward 
+                        and Alphonse are left in a catastrophic new reality.
+                    </p>
+                    <p id="anime-item-rating">Rating: PG-13</p>
+                    <ul id="anime-item-genres" class="anime-item__content__genres">
+                        <li>Action</li>
+                        <li>Comedy</li>
+                        <li>Adventure</li>
+                    </ul>
+                    <button id="watched-button" data-type="filled">Watched</button>
+                </div>
+            </div>
+            <div class="anime-item" id="anime-item-1">
+                <img class="anime-item__image" src="https://cdn.myanimelist.net/images/anime/3/72078l.webp" alt="anime-title">
+                <div class="anime-item__content" id="anime-item-">
+                    <a class="anime-item__content__title" id="anime-item-title">Gintama</a>
+                    <p id="anime-item-desc">
+                        Gintoki, Shinpachi, and Kagura return as the fun-loving but broke members of the Yorozuya team! 
+                    </p>
+                    <p id="anime-item-rating">Rating: PG-13</p>
+                    <ul id="anime-item-genres" class="anime-item__content__genres">
+                        <li>Action</li>
+                        <li>Comedy</li>
+                        <li>Sci-fi</li>
+                    </ul>
+                    <button id="watched-button" data-type="filled">Watched</button>
+                </div>
+            </div>
+            <div class="anime-item" id="anime-item-2">
+                <img class="anime-item__image" src="https://cdn.myanimelist.net/images/anime/1337/99013l.webp" alt="anime-title">
+                <div class="anime-item__content" id="anime-item-">
+                    <a class="anime-item__content__title" id="anime-item-title">Hunter x Hunter</a>
+                    <p id="anime-item-desc">Hunters devote themselves to accomplishing hazardous tasks, 
+                        all from traversing the world's uncharted territories to locating rare items and monsters.
+                    </p>
+                    <p id="anime-item-rating">Rating: NC-17</p>
+                    <ul id="anime-item-genres" class="anime-item__content__genres">
+                        <li>Action</li>
+                        <li>Comedy</li>
+                        <li>Adventure</li>
+                    </ul>
+                    <button id="watched-button" data-type="filled">Watched</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cookie_modal active" id="cookie_modal">
+        <img class="cookie_modal__image" src="./assets/cookie.png" alt="image of cookie" aria-hidden="true">
+        <div class="cookie_modal__inner">
+            <h3>This website uses cookies to offer you a better user experience.
+                Please accept cookies for optimal performance.
+            </h3>
+            <div class="cookie_modal__actions">
+                <button data-type="filled" id="cookie_button">Yes, I accept cookies</button>
+                <button data-type="text">More information</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

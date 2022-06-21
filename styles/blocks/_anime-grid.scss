@@ -1,0 +1,12 @@
+.anime-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .anime-grid {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+}

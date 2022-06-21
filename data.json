@@ -1,0 +1,19 @@
+{
+  "animes": [
+    {
+      "mal_id": 0,
+      "title": "Naruto",
+      "ranking": "PG-13"
+    },
+    {
+      "mal_id": 1,
+      "title": "Dragon Ball",
+      "ranking": "PG-12"
+    },
+    {
+      "mal_id": 2,
+      "title": "One Pience",
+      "ranking": "NC-17"
+    }
+  ]
+}

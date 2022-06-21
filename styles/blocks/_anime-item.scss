@@ -1,0 +1,29 @@
+.anime-item {
+  border: 2px dashed green;
+  padding: 1rem;
+
+  &__image {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    font-size: 1rem;
+
+    &__title {
+      font-size: 1.2rem;
+      color: var(--title-color);
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    &__genres {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0;
+      gap: 0.5rem;
+    }
+  }
+}

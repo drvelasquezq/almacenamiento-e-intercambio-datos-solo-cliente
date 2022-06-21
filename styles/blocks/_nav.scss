@@ -1,0 +1,19 @@
+.nav {
+  margin-top: -1rem;
+  margin-inline-start: -1rem;
+  line-height: 1;
+  color: var(--text-color);
+  font-size: 1.25rem;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.25rem;
+
+    > * {
+      padding-top: 1rem;
+      padding-inline-start: 1rem;
+    }
+  }
+}
