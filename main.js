@@ -1,9 +1,9 @@
 import { addCookieToButton, checkCookies } from "./modules/cookies.js";
 import { checkColorMode, handleChangeColor } from "./modules/theme.js";
 import { loadDB } from "./modules/db.js";
-import { removeSavedItems, showSavedItems } from "./modules/animeItem.js";
-import { getAnimeData } from "./modules/fetchData.js";
-import { renderAnimes } from "./modules/animeItem.js";
+import { removeSavedItems, showSavedItems } from "./modules/movieItem.js";
+import { getMoviesData } from "./modules/fetchData.js";
+import { renderMovies } from "./modules/movieItem.js";
 
 async function onLoad() {
   /* Agregamos la funcionalidad de crear cookies en el modal */
@@ -32,8 +32,8 @@ async function onLoad() {
   const pathname = window.location.pathname.split("/");
   const location = pathname[pathname.length - 1];
 
-  const { data } = await getAnimeData();
-  renderAnimes(data);
+  const { data } = await getMoviesData();
+  renderMovies(data);
 
   if (location === "index.html") {
     /* Verificamos que no se vuelva a mostrar un elemento guardado */

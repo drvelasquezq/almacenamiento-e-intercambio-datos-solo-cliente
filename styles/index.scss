@@ -20,6 +20,7 @@
 
 @import "theme/dark";
 @import "theme/light";
+@import "theme/ocean";
 
 /*
     Bloques o componentes de la aplicacion
@@ -28,8 +29,8 @@
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/modal";
-@import "blocks/anime-grid";
-@import "blocks/anime-item";
+@import "blocks/movies-grid";
+@import "blocks/movie-item";
 @import "blocks/theme-button";
 
 html {

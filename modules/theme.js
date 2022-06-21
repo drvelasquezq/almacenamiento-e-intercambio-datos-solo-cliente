@@ -1,27 +1,24 @@
-const btnToggle = document.querySelector("#data-theme-toggle");
+const btnsToggle = document.querySelectorAll('[name="data-theme-toggle"]');
 
 function handleChangeColor() {
-  btnToggle.addEventListener("click", (e) => {
-    const checked = e.currentTarget.checked;
-
-    if (checked) {
-      document.documentElement.setAttribute("color-mode", "dark"); // Modifica el atributo color-mode en el tag html de nuestro index
-      localStorage.setItem("color-mode", "dark"); // Guardamos el modo en el localStraoge
-    } else {
-      document.documentElement.setAttribute("color-mode", "light"); // Cambiamos a modo light
-      localStorage.setItem("color-mode", "light"); // Guardamos el modo en localStorage
-    }
-  });
+  for (let i = 0; i < btnsToggle.length; i++) {
+    btnsToggle[i].addEventListener('click', (e) => {
+      const checked = e.currentTarget.checked;
+      if (checked) {
+        document.documentElement.setAttribute("color-mode", e.currentTarget.value);
+        localStorage.setItem("color-mode", e.currentTarget.value);
+      }  
+    });
+  }
 }
 
 function checkColorMode() {
   const colorMode = localStorage.getItem("color-mode");
-  if (colorMode === "dark") {
-    document.documentElement.setAttribute("color-mode", "dark");
-    btnToggle.checked = true;
-  } else {
-    btnToggle.checked = false;
-    document.documentElement.setAttribute("color-mode", "light");
+  for (let i = 0; i < btnsToggle.length; i++) {
+    if (colorMode === btnsToggle[i].value) {
+      document.documentElement.setAttribute("color-mode", btnsToggle[i].value);
+      btnsToggle[i].checked = true;
+    }
   }
 }
 

@@ -1,7 +1,7 @@
-async function getAnimeData() {
-  const response = await fetch("https://api.jikan.moe/v4/top/anime");
+async function getMoviesData() {
+  const response = await fetch("https://ghibliapi.herokuapp.com/films");
   const data = await response.json();
-  return data;
+  return {data: data};
 }
 
-export { getAnimeData };
+export { getMoviesData };

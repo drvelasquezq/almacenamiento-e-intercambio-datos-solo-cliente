@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=`, initial-scale=1.0">
-    <title>Modulo 2 | Clase 6 | Cookies, una vieja amiga</title>
+    <title>index final project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
@@ -16,7 +16,7 @@
         <div class="wrapper">
             <div class="site-header__inner">
                 <a href="/" aria-label="Studio Ghibli Database" class="site-header__brand">
-                    Anime Repository
+                    Movies Studio Ghibli
                 </a>
                 <nav class="nav" aria-label="primary">
                     <ul class="nav__list">
@@ -24,7 +24,15 @@
                         <li><a href="saved.html">saved</a></li>
                         <li>
                             <label class="switch">  
-                                <input class="switch__input" type="checkbox" id="data-theme-toggle">  
+                                <input class="switch__input" type="radio" value="dark" id="data-theme-toggle-dark" name="data-theme-toggle">  
+                                <span class="switch__slider"></span>  
+                            </label>
+                            <label class="switch">  
+                                <input class="switch__input" type="radio" value="light" id="data-theme-toggle-light" name="data-theme-toggle">  
+                                <span class="switch__slider"></span>  
+                            </label>
+                            <label class="switch">  
+                                <input class="switch__input" type="radio" value="ocean" id="data-theme-toggle-ocean" name="data-theme-toggle">  
                                 <span class="switch__slider"></span>  
                             </label>
                         </li>
@@ -34,7 +42,7 @@
         </div>
     </header>
     <main role="main" class="wrapper">
-        <div class="anime-grid content" id="anime-grid">
+        <div class="movies-grid content" id="movies-grid">
         
         </div>
     </main>
